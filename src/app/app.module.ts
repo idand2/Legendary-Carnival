@@ -11,6 +11,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
+  // all components must be declared in declarations
   declarations: [
     AppComponent,
     HeroesComponent,
@@ -18,6 +19,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MessagesComponent,
     DashboardComponent    
   ],
+  // all Modules must be declared in imports.
   imports: [
     BrowserModule,
     AppRoutingModule,

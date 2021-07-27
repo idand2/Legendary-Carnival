@@ -1,8 +1,8 @@
+<!-- div will show only if any message got fetch by the messageSerice -->
 <div *ngIf="messageService.messages.length">
-
   <h2>Messages</h2>
-  <button class="clear"
-          (click)="messageService.clear()">Clear messages</button>
+  <!-- onClick event to a button, will call messageService.clear method() -->
+  <button class="clear" (click)="messageService.clear()">Clear messages</button>
+  <!-- creates div for each message in the messageService.meessages array. -->
   <div *ngFor='let message of messageService.messages'> {{message}} </div>
-
 </div>

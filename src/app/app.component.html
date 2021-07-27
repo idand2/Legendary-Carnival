@@ -1,7 +1,10 @@
+<!-- the main view of the app. shows the title and the nav bar. -->
 <h1>{{title}}</h1>
+<!-- creates a nav bar with to records, each is a routerLink to a view.  -->
 <nav>
     <a routerLink="/dashboard">Dashboard</a>
     <a routerLink="/heroes">Heroes</a>
 </nav>
+<!-- TODO: check wtf is router outlet :)  -->
 <router-outlet></router-outlet>
 <app-messages></app-messages>

@@ -1,11 +1,11 @@
 <h2>My Heroes</h2>
     <ul class="heroes">
+        <!-- uses *ngFor to create a record in the list (li inside the ul). 
+        each hero in the heroes array will get a li tag. -->
         <li *ngFor="let hero of heroes">
+            <!-- each of the li tags will be used as a routerLink to the hero details view.-->
             <a routerLink='/detail/{{hero.id}}'>
             <span class="badge">{{hero.id}}</span>{{hero.name}}
             </a>
         </li>
     </ul>
-<!-- <h2>My Hero Is: {{hero.name}}</h2>
-<a routerLink="/detail/{{hero.id}}">Show details</a> -->
-<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
