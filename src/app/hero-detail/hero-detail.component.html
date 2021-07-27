@@ -1,10 +1,16 @@
+<!-- the div will appear only if the hero variable in the .ts has value -->
 <div *ngIf="hero">
+    <!-- using pipeline to make the hero.name written in uppercase -->
     <h2>{{hero.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{hero.id}}</div>
+    <!-- using interpollation to show the hero.id value from the .ts file -->
+    <div>id: {{hero.id}}</div>
     <div>
         <label for="hero-name">Hero name:</label>
+        <!-- uses two way data binding. the ngModel is neccesary for the @input in the .ts file -->
         <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
     </div>
+    <!-- creating an onclick event for two buttons, each calling a different method in the .ts file -->
     <button (click)="goBack()">Go Back</button>
     <button (click)="updateHero()">Update</button>
 </div>
+ 
